@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "id": 2,
+      "first_name": "tuantd",
+      "last_name": "Palmer",
+      "address": "Path 12, Manchess Street"
+    },
+    {
+      "id": 3,
+      "first_name": "Anne",
+      "last_name": "Cathays",
+      "address": "4th floor, Nanman Landing"
+    },
+    {
+      "first_name": "Adbayer",
+      "last_name": "Cathays",
+      "address": "4th floor, hanoi",
+      "id": 4
+    }
+  ]
+}

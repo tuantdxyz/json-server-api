@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "dc01a310-e539-4bbd-a8d0-bba2b0c40f6a",
+		"name": "Json-server-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12572496"
+	},
+	"item": [
+		{
+			"name": "List students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List class",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/class",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"class"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get students by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/students/7aa486fe-830d-429e-a744-2cdf4fac99e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"7aa486fe-830d-429e-a744-2cdf4fac99e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"class_id\": \"33fbf0cd-c8c1-47c3-81a0-146bbf76129f\",\n    \"id\": \"7aa486fe-830d-429e-a744-2cdf4fac99ss\",\n    \"name\": \"tuan trinh\",\n    \"sex\": \"Man\",\n    \"medium_score\": 3,\n    \"avatar\": \"https://cdn.fakercloud.com/avatars/ionuss_128.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH edit students by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"tuantd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students/7aa486fe-830d-429e-a744-2cdf4fac99e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"7aa486fe-830d-429e-a744-2cdf4fac99e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT edit students by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"class_id\": \"33fbf0cd-c8c1-47c3-81a0-146bbf76129f\",\n    \"name\": \"tuantdxyz\",\n    \"sex\": \"Cisgender Man\",\n    \"medium_score\": 3,\n    \"avatar\": \"https://cdn.fakercloud.com/avatars/ionuss_128.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/students/7aa486fe-830d-429e-a744-2cdf4fac99e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"7aa486fe-830d-429e-a744-2cdf4fac99e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete students by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/students/7aa486fe-830d-429e-a744-2cdf4fac99e7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"students",
+						"7aa486fe-830d-429e-a744-2cdf4fac99e7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
