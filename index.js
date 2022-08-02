@@ -27,8 +27,8 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
   const headers = res.getHeaders();
   const totalCount = headers['x-total-count'];
-  console.log(req)
-  console.log(totalCount)
+  // console.log(req)
+  // console.log(totalCount)
   if(req.originalMethod === 'GET' && totalCount){
     const queryParams = queryString.parse(req._parsedOriginalUrl.query);
     const result = {
@@ -45,6 +45,9 @@ router.render = (req, res) => {
 }
 // Use default router
 server.use('/api',router)
-server.listen(3000, () => {
+
+// Start server
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
   console.log('JSON Server is running')
 })
